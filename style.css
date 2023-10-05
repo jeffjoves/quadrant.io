@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: auto;
+    margin: auto;
+
+}
+
+body {
+    
+    font-family: 'Poppins';
+    background-color: #7C96AB;
+    overflow-x: hidden; /* Hide the x-axis scrollbar */
+
+}
+
+/* Quadrant */
+.header {
+    column-span: all;
+    display: block;
+    padding: 30px;
+    margin: 10px;
+    font-size: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    columns: 200px 2;
+    column-gap: 30px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C96AB;
+}
+
+/*containers */
+
+.container1 {
+    height: 500px;
+    width: 450px;
+    background-color: #EDC6B1;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.container2 {
+    height: 500px;
+    width: 450px;
+    background-color: #EDC6B1;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.container3 {
+    height: 500px;
+    width: 450px;
+    background-color: #EDC6B1;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.container4 {
+    height: 500px;
+    width: 450px;
+    background-color: #EDC6B1;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+/*header (URGENT NOT IMP.)*/
+.main-container h1 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Poppins';
+    padding: 10px;
+    margin: 10px;
+}
+
+/*tasklist*/
+
+.taskList {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.taskList li {
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Delete / X  Button Design*/
+
+.delete-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/*Add Button*/
+
+.openButton {
+    background-color: #2D4356;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.openButton:hover {
+    background-color: #0056b3;
+}
+
+/*Placeholder */
+
+.inputContainer {
+    padding: 10px;
+}
+
+.taskInput {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.taskInput::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.taskInput:focus {
+    transition: color 0.3s ease;
+    border-radius: 50px;
+}
+
+/*Save Button*/
+
+.addTaskButton {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #fff;
+    background-color: #2D4356;
+}
+
+.addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+/*Center the add button and the placeholcer*/
+
+.inside-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Scrollbar on every task-container*/
+
+.task-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: none;
+}
+
+/*Scrollbar Design provided by CHATGPT*/
+
+/* Customize scrollbar colors */
+scrollbar-color: #ff7f50;
+
+
+
+/* Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #ff7f50;
+    border-radius: 9x;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6347;
+}
+
+/* Customize scrollbar track */
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 50px;
+}
+
+/* Adjust scrollbar width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}

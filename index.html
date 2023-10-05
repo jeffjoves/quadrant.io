@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUADRANT</title>
+    <link rel="icon" type="image/x-icon" href="mathicon.ico">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">QUADRANT</div>
+
+    <div class="main-container">
+        <!-- Container for tasks -->
+        <div class="container1">
+            <!-- Container 1 Task -->
+            <h1>URGENT AND IMPORTANT</h1>
+            <div class="task-container" id="taskContainer1">
+                <div class="inside-container">
+                    <button class="openButton" onclick="openButton(1)">Add</button>
+                    <div class="inputContainer" style="display:none;">
+                        <input type="text" class="taskInput" placeholder="Enter Task...">
+                        <button class="addTaskButton" onclick="reloadPage()">Save</button>
+                    </div>
+                </div>
+                <ul class="taskList"></ul>
+            </div>
+        </div>
+
+        <div class="container2">
+            <!-- Container 2 Task -->
+            <h1>URGENT AND <span style="color: #fff;">not</span> IMPORTANT</h1>
+            <div class="task-container" id="taskContainer2">
+                <div class="inside-container">
+                    <button class="openButton" onclick="openButton(1)">Add</button>
+                    <div class="inputContainer" style="display:none;">
+                        <input type="text" class="taskInput" placeholder="Enter Task...">
+                        <button class="addTaskButton" onclick="reloadPage()">Save</button>
+                    </div>
+                </div>
+                <ul class="taskList"></ul>
+            </div>
+        </div>
+
+        <div class="container3">
+            <!-- Container 3 Task -->
+            <h1><span style="color: #fff;">not</span> URGENT AND IMPORTANT</h1>
+            <div class="task-container" id="taskContainer3">
+                <div class="inside-container">
+                    <button class="openButton" onclick="openButton(1)">Add</button>
+                    <div class="inputContainer" style="display:none;">
+                        <input type="text" class="taskInput" placeholder="Enter Task...">
+                        <button class="addTaskButton" onclick="reloadPage()">Save</button>
+                    </div>
+                </div>
+                <ul class="taskList"></ul>
+            </div>
+        </div>
+
+        <div class="container4">
+            <!-- Container 4 Task -->
+            <h1><span style="color: #fff;">not</span> URGENT AND <span style="color: #fff;">not</span> IMPORTANT</h1>
+            <div class="task-container" id="taskContainer4">
+                <div class="inside-container">
+                    <button class="openButton" onclick="openButton(1)">Add</button>
+                    <div class="inputContainer" style="display:none;">
+                        <input type="text" class="taskInput" placeholder="Enter Task...">
+                        <button class="addTaskButton" onclick="reloadPage()">Save</button>
+                    </div>
+                </div>
+                <ul class="taskList"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
